@@ -1,0 +1,26 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node ./index.ts",
+    "dev": "ts-node-dev ./index.ts",
+    "test": "nyc --reporter=lcov --reporter=text --reporter=text-summary mocha --require ts-node/register --exit --recursive --timeout=150000 test/**.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^5.0.0",
+    "@types/mocha": "^10.0.9",
+    "@types/sinon": "^17.0.3",
+    "chai": "^4.3.7",
+    "mocha": "^10.7.3",
+    "nyc": "^17.1.0",
+    "sinon": "^19.0.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
